@@ -1,0 +1,355 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  /*
+     CSS code for the nav bar.
+    */
+  }
+  #nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgb(242, 91, 0);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 70px;
+  }
+  #nav-bar li {
+    display: inline-block;
+    padding: 3px 30px;
+    background: white;
+    margin: 8px 10px;
+  }
+  /*
+  The code for the logo.
+  */
+  #header-img {
+    height: 55px;
+    margin-left: 4px;
+    margin-bottom: 5px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: black;
+    background: white;
+    padding: 5px;
+    position: absolute;
+    left: 45px;
+    top: 5px;
+  }
+  #nav-bar a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;  
+  }
+  #nav-bar li:hover {
+    text-decoration: underline;
+  /*
+    --title--
+     CSS code for the title and background.
+    */
+  }
+  .title-container {
+    display: flex;
+    background-image: url(https://i.pinimg.com/originals/99/fe/86/99fe86357b5c44b9c3dd9fac72341e39.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+  }
+  .title {
+    background: rgb(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 160px 600px;
+    margin: 20px 50px;
+  }
+  .title h1 {
+    font-size: 60px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .title h2{
+    font-size: 25px;
+  /*
+    --About Us-- 
+    CSS code for the container with information about your business.
+    */
+  }
+  .about-container {
+    background: rgb(28, 28, 28);
+    height: 900px;
+    display: flex;
+  }
+  .about-container p {
+    font-size: 34px;
+    color: white;
+    margin: 70px 15px 0 15px;
+  }
+  .about-container h3 {
+    color: white;
+    margin: 40px 0px;
+    font-size: 45px;
+    padding: 5px 10px;
+  }
+  .box-p {
+    background: rgb(255, 140, 0);
+    margin-left: 200px;
+    padding: 5px 0px;
+    width: 450px;
+    height: auto;
+  }
+  .about-container iframe {
+    margin: 100px 50px;
+    border-style: none;
+    width: 760px; 
+    height: 415px;
+  }
+  /*
+  --Product--
+  This container I put the products, I can use a Grid style our Flexbox. In this example, I use Flexbox.
+  */
+  .product-container {
+    background: gray;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .card {
+    background: white;
+    width: 280px;
+    border-radius: 15px;
+    height: auto;
+    padding-bottom: 10px;
+    margin: 100px 25px;
+  }
+  .card:hover{
+    background: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transition: all 1s ease;
+  }
+  .card h3 {
+    font-size: 30px;
+    margin: 10px 15px;
+  }
+  .card p {
+   font-size: 20px;
+   margin: 15px;
+  }
+  .card a {
+    background-color: black;
+    color: white;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px 40px;
+    padding: 10px;
+  }
+  .card-image{
+    background: lightblue;
+    height: 200px; 
+    border-radius: 15px 15px 0 0;
+    background-size: cover;
+  }
+  #car1{
+    background-image: url(https://cdn.pixabay.com/photo/2015/09/02/12/25/bmw-918408_960_720.jpg);
+  }
+  #car2 {
+    background-image: url(https://cdn.pixabay.com/photo/2017/03/27/14/56/auto-2179220__340.jpg);
+  }
+  #car3 {
+    background-image: url(https://cdn.pixabay.com/photo/2015/05/15/14/46/bmw-768688_960_720.jpg);
+  }
+  #car4 {
+    background-image: url(https://cdn.pixabay.com/photo/2016/12/03/18/57/car-1880381_960_720.jpg);
+  }
+  #car5 {
+    background-image: url(https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGNhcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60)
+  }
+  #car6 {
+    background-image: url(https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2Fyc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60)
+  }
+  /*
+  --Contact--
+  */
+  .contact-container {
+    background-image:  url(https://cdn.pixabay.com/photo/2016/11/18/15/58/vw-1835506_960_720.jpg);
+    background-size: cover;
+    height: 800px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-background {
+    background: rgb(22, 22, 22, 0.9);
+    padding: 40px;  
+  }
+  .contact-container form {
+  display: flex;
+  flex-direction: column;
+  }
+  .contact-container label {
+    display: block;
+    font-size: 26px;
+    margin: 10px 0;
+  }
+  .contact-container input {
+    padding: 5px;
+    width: 450px;
+    font-size: 20px;
+  }
+  .contact-container label, h2, h3 {
+    color: white;
+  }
+  .contact-container textarea {
+    font-size: 20px;
+    padding: 5px;
+    width: 450px;
+    height: 200px;
+  }
+  .contact-container h2{
+    font-size: 36px;
+  }
+  .contact-container h3{
+    font-size: 24px;
+  }
+  .contact-container button {
+    width: 450px;
+    margin: 25px 0 0 0;
+    padding: 10px;
+  }
+  /*
+  @media for work width=1400px.
+  */
+  
+  @media all and (max-width: 1400px) {
+    .about-container{
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }  
+  .box-p {
+    background: rgb(255, 140, 0);
+    margin: 20px 0 ;
+    padding: 0px 30px 30px 30px;
+    width: auto;
+    height: auto;
+  } 
+    .about-container iframe {
+    border-style: none;
+    width: 500px; 
+    height: 340px;
+    margin: 30px 0 0 0;
+  }
+  }
+  /*
+     I maked a @media that allows to your website work in a phone.
+    */
+  @media all and (max-width: 600px) {
+   /*
+     @media for your nav bar.
+    */
+    #nav-bar{
+      flex-direction: column;
+      height: 150px;
+    }
+    #header-img {
+      position: static;
+      height : 80px;
+      margin-top: 5px;
+    }
+  #nav-bar li {
+    display: inline-block;
+    padding: 3px 15px;
+    background: white;
+    margin: 8px 5px;
+  }
+  /*
+     @media for your title container.
+    */
+    .title {
+    padding: 60px 100px;
+    margin: 20px 50px;
+  }
+    /*
+     @media for your about container.
+    */
+  .about-container {
+    height: 750px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box-p {
+    background: rgb(255, 140, 0);
+    margin-top: 10px;
+    margin-left: 0px;
+    padding: 0px;
+    width: auto;
+    height: auto;
+  }
+  .about-container h3 {
+    color: white;
+    margin: 5px;
+    padding: 5px;
+  
+  }
+  .about-container p {
+    font-size: 26px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  .about-container iframe {
+    border-style: none;
+    width: 370px; 
+    height: 285px;
+    margin: 30px 0 0 0;
+  }
+    .card{
+      margin: 25px 10px 5px 10px;
+      width: 360px;
+    }
+    /*
+    @media for contact container.
+    */
+    .contact-container {
+    height: 700px;
+    padding: 10px;
+    }
+  .contact-background {
+    background: rgb(22, 22, 22, 0.9);
+    padding: 30px; 
+    margin: 10px ;
+  } 
+  .contact-container input {
+    padding: 5px;
+    width: 300px;
+    font-size: 15px;  
+  }
+  contact-container label {
+    display: block;
+    font-size: 26px;
+    margin: 10px 0;
+  }
+  .contact-container textarea {
+    font-size: 15px;
+    padding: 5px;
+    width: 300px;
+    height: 140px;
+  }
+    .contact-container button {
+    width: 300px;
+    margin: 25px 0 0 0;
+    padding: 10px;  
+    }
+}
